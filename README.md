@@ -9,6 +9,15 @@ https://restaurant-menu-864bd.web.app/
 5. npm run build (do not do it before)
 6. firebase deploy
 
+If you make any changes then : 
+7. no need to worry
+8. firebase wont automatically capture it until you connect it to github
+9. it can be connected to github only if initialized first
+10. now again do NPM RUN BUILD
+11. then FIREBASE DEPLOY
+12. It will deploy the new code to firebase. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
