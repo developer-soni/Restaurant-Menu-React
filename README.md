@@ -10,6 +10,7 @@ https://restaurant-menu-864bd.web.app/
 6. firebase deploy
 
 If you make any changes then : 
+
 7. no need to worry
 8. firebase wont automatically capture it until you connect it to github
 9. it can be connected to github only if initialized first
