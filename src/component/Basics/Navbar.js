@@ -5,52 +5,18 @@ const Navbar = ({ filterItem, menuList }) => {
     <>
       <nav className="navbar">
         <div className="btn-group">
-          {menuList.map(() => {
+          {menuList.map((currElem) => {
             return (
               <button
                 className="btn-group__item"
                 onClick={() => {
-                  filterItem("breakfast");
+                  filterItem(currElem);
                 }}
               >
-                Breakfast
+                {currElem}
               </button>
             );
           })}
-
-          <button
-            className="btn-group__item"
-            onClick={() => {
-              setMenuData(Menu);
-            }}
-          >
-            All
-          </button>
-          
-          <button
-            className="btn-group__item"
-            onClick={() => {
-              filterItem("lunch");
-            }}
-          >
-            Lunch
-          </button>
-          <button
-            className="btn-group__item"
-            onClick={() => {
-              filterItem("evening");
-            }}
-          >
-            Evening
-          </button>
-          <button
-            className="btn-group__item"
-            onClick={() => {
-              filterItem("dinner");
-            }}
-          >
-            Dinner
-          </button>
         </div>
       </nav>
     </>

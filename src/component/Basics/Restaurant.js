@@ -9,6 +9,7 @@ import Navbar from "./Navbar";
 //then convert set object to array
 //then use spread operator (...)
 const uniqueList = [
+  "All",
   ...new Set(
     Menu.map((currElem) => {
       return currElem.category;
@@ -23,6 +24,10 @@ const Restaurant = () => {
   const [menuList, setMenuList] = useState(uniqueList);
 
   const filterItem = (category) => {
+    if (category === "All") {
+      setMenuData(Menu);
+      return;
+    }
     const updatedList = Menu.filter((currElem) => {
       return currElem.category === category;
     });
@@ -31,7 +36,7 @@ const Restaurant = () => {
 
   return (
     <>
-      <Navbar filterItem={filterItem} menuList={menuList}/>
+      <Navbar filterItem={filterItem} menuList={menuList} />
       <MenuCard menuAttribute={menuData} />
     </>
   );
