@@ -1,7 +1,13 @@
 # Deployed on Firebase
 https://restaurant-menu-864bd.web.app/
 
-
+## Deployment Firebase Steps:
+1. firebase init
+2. select hosting
+3. select existing firebase project folder
+4. build folder instead of public
+5. npm run build (do not do it before)
+6. firebase deploy
 
 # Getting Started with Create React App
 
