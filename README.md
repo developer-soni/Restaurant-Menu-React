@@ -1,7 +1,23 @@
-# Deployed on Firebase
+# Simple Restaurant Menu 
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE)
+
+## Deployed on Firebase
 https://restaurant-menu-864bd.web.app/
 
-## Deployment Firebase Steps:
+## Description
+* Created a Simple Restaurant Menu App using basic knowledge of React. (Day 16 of #100daysofcode)
+* Implemented State Management to add Category Filters.
+* New Categories and Items can be added in MenuApi.js 
+* Added logic to automatically recognize each new category and add it in tab bar. (including Custom Items)
+* Deployment on Firebase. 
+* Not Mobile Responsive Yet. 
+
+## Firebase Deployment Steps:
 1. firebase init
 2. select hosting
 3. select existing firebase project folder
@@ -12,11 +28,14 @@ https://restaurant-menu-864bd.web.app/
 If you make any changes then : 
 
 7. no need to worry
-8. firebase wont automatically capture it until you connect it to github
-9. it can be connected to github only if initialized first
+8. (firebase wont automatically capture it until you connect it to github)(optional)
+9. (it can be connected to github only if initialized first)(optional)
 10. now again do NPM RUN BUILD
 11. then FIREBASE DEPLOY
 12. It will deploy the new code to firebase. 
+
+## Screenshot
+<img src="menu.png" alt="RestaurantMenu!" width="80%"/>
 
 
 # Getting Started with Create React App
